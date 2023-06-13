@@ -51,7 +51,7 @@ class Users extends Component
     public function sortBy(string $field): void
     {
         if ($this->sortField === $field) {
-            $this->sortAsc = ! $this->sortAsc;
+            $this->sortAsc = !$this->sortAsc;
         } else {
             $this->sortAsc = true;
         }
@@ -64,12 +64,12 @@ class Users extends Component
         $query = $this->builder();
 
         if ($this->name) {
-            $query->where('name', 'like', '%'.$this->name.'%');
+            $query->where('name', 'like', '%' . $this->name . '%');
         }
 
         if ($this->email) {
             $this->openFilter = true;
-            $query->where('email', 'like', '%'.$this->email.'%');
+            $query->where('email', 'like', '%' . $this->email . '%');
         }
 
         if ($this->joined) {

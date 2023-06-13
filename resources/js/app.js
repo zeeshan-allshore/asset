@@ -1,12 +1,15 @@
-import './bootstrap';
+import "./bootstrap";
 
-import Alpine from 'alpinejs';
+import Alpine from "alpinejs";
 
 window.Alpine = Alpine;
 
 Alpine.start();
 
-import 'flatpickr';
+import Quagga from "quagga";
+window.Quagga = Quagga;
 
-import * as FilePond from 'filepond';
+import "flatpickr";
+
+import * as FilePond from "filepond";
 window.FilePond = FilePond;
